@@ -1,0 +1,514 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../dist/output.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <div class="md:bg-[#1A94FF] p-4  hidden  md:hidden lg:hidden xl:hidden 2xl:block">
+    <div class="container flex mx-auto items-center md:gap-52">
+      <!-- left -->
+      <div class="">
+        <img src="images/logo.png" alt="">
+        <img src="images/freeship.png" alt="" class="mt-[20px]">
+      </div>
+      <!-- end left -->
+      <!-- right -->
+      <div class="">
+        <!-- top -->
+
+        <div class="flex items-center">
+          <form action="" class="flex">
+            <input type="text" class="md:w-[626px] h-10" placeholder="Tìm Kiếm Sản Phẩm..." required>
+            <button class="w-32 h-10 bg-[#0D5CB6] text-white hover:bg-black "><i
+                class="fa-solid fa-magnifying-glass p-2 "></i>Tìm
+              Kiếm</button>
+          </form>
+
+          <div class=" flex ml-[30px] gap-3">
+            <img src="images/user.png" alt="" class="object-contain">
+            <div class="text-white">
+              <p class="hover:text-stone-800 cursor-pointer ">Đăng Nhập / Đăng Ký</p>
+              <p class="hover:text-stone-800  cursor-pointer ">Tài khoản <i class="fa-solid fa-angle-down"></i></p>
+            </div>
+          </div>
+
+
+          <div class="ml-[80px] ">
+
+            <div class="flex relative text-white gap-2">
+              <img class="cart-icon" width="39px"
+                src="https://salt.tikicdn.com/ts/upload/40/44/6c/b80ad73e5e84aeb71c08e5d8d438eaa1.png">
+              <small class="absolute  left-6 top-[-2px]  bg-yellow-500 rounded-full  px-2 py-[2px]">0</small>
+              <p class=" text-white pt-2 hover:text-stone-800 cursor-pointer "> Giỏ Hàng</p>
+            </div>
+
+
+            </p>
+
+            <!-- end cart -->
+          </div>
+        </div>
+
+
+        <!-- bottom -->
+        <div class="flex justify-between mt-[10px]">
+          <div class="flex text-white gap-3">
+
+
+            <p class="hover:text-stone-800  cursor-pointer">sherlock holmes</p>
+            <p class="hover:text-stone-800  cursor-pointer">cơ thể tự chữa lành</p>
+            <p class="hover:text-stone-800  cursor-pointer">nếu biết trăm năm là hữu hạn</p>
+            <p class="hover:text-stone-800  cursor-pointer">nếu biết trăm năm</p>
+
+          </div>
+
+          <div class="flex bg-blue-400 rounded-xl gap-[5px] px-2 hover:bg-black ">
+            <img src="images/Shape.png" alt="" class="object-contain ">
+            <p class="text-white  cursor-pointer ">Bán hàng cùng Tiki</p>
+          </div>
+
+        </div>
+      </div>
+      <!-- end right -->
+    </div>
+  </div>
+  <!-- END HEADER -->
+  <!-- search mobile -->
+  <div class="md:block lg:block xl:block 2xl:hidden ml-24 my-[20px]  flex gap-5 ">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+      stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+    </svg>
+    <input type="text" placeholder="Bạn đang tìm kiếm gì">
+  </div>
+  <!-- end search mobile -->
+  <!-- CONTENT -->
+  <div class="bg-gray-200 hidden md:block">
+    <div class=" container mx-auto leading-10 h-10">
+      <p> <span class="text-[#808089]">Trang chủ</span> <i class="fa-solid fa-angle-right"></i> Nhà Sách Tiki</p>
+    </div>
+  </div>
+
+  <div class="container mx-auto  flex ">
+    <!-- home -->
+    <!-- slidebar -->
+    <div class=" gap-x-80 grid grid-cols-2 hidden md:block">
+      <div class="w-[248px]">
+
+        <div class=" mb-[19px]">
+          <h3 class="my-[14px]">Danh Mục Sản Phẩm</h3>
+          <ul>
+            <li>English Books</li>
+            <li class="mt-2">Sách tiếng Việt</li>
+            <li class="mt-2">Văn phòng phẩm</li>
+            <li class="mt-2">Quà lưu niệm</li>
+          </ul>
+        </div>
+        <hr>
+        <div class="mb-[11px]">
+          <h3 class="my-[15px]">ĐỊA CHỈ NHẬN HÀNG</h3>
+          <p>Q. Hoàn Kiếm, P. Hàng Trống, Hà Nội</p>
+          <p class="text-blue-500">ĐỔI ĐỊA CHỈ</p>
+        </div>
+        <hr>
+
+        <div class="mb-[20px] ">
+          <h3 class="my-[15px]">DỊCH VỤ</h3>
+          <div class="flex items-center gap-[9px] mt-[8px]">
+            <input type="checkbox">
+            <img src="images/sldiebartikinow.png" alt="">
+            Giao siêu tốc 2H
+          </div>
+          <div class="flex items-center gap-[9px] mt-[8px]">
+            <input type="checkbox">
+            <img src="images/slidebarfreeship.png" alt="">
+            Không giới hạn
+          </div>
+          <div class="flex items-center gap-[9px] mt-[8px]">
+            <input type="checkbox">
+            Rẻ hơn hoàn tiền
+          </div>
+          <div class="flex items-center gap-[9px] mt-[8px]">
+            <input type="checkbox">
+            Trả góp 0%
+          </div>
+        </div>
+        <hr>
+        <div>
+          <h3 class="my-[15px]">Nơi bán</h3>
+
+          <div class="items-center flex gap-[9px]">
+            <input type="checkbox" name="" id="">Hà Nội <br>
+          </div>
+          <div class="items-center flex gap-[9px]  mt-2">
+            <input type="checkbox" name="" id="">Hồ Chí Minh <br>
+          </div>
+          <div class="items-center flex gap-[9px]  mt-2">
+            <input type="checkbox" name="" id="">Đà Nẵng <br>
+          </div>
+          <div class="items-center flex gap-[9px]  mt-2">
+            <input type="checkbox" name="" id="">Thái Nguyên <br>
+          </div>
+          <div class="items-center flex gap-[9px]  mt-2">
+            <input type="checkbox" name="" id="">Bình Dương<br>
+          </div>
+
+          <div class="mt-[22px] mb-[11px]">
+            <p class="text-blue-500">Xem Thêm <i class="fa-solid fa-angle-down"></i></p>
+          </div>
+
+        </div>
+
+        <hr>
+        <div class="my-[15px]">
+          <h3 class="mb-5">Đánh giá</h3>
+          <div class="flex gap-[2px]">
+            <img src="images/sao.png" alt="" class="object-contain">
+            <img src="images/sao.png" alt="" class="object-contain">
+            <img src="images/sao.png" alt="" class="object-contain">
+            <img src="images/sao.png" alt="" class="object-contain">
+            <img src="images/sao.png" alt="" class="object-contain">
+            <h4 class="ml-1">từ 5 sao</h4>
+          </div>
+          <div class="flex gap-[2px] mt-[14px]">
+            <img src="images/sao.png" alt="" class="object-contain">
+            <img src="images/sao.png" alt="" class="object-contain">
+            <img src="images/sao.png" alt="" class="object-contain">
+            <img src="images/sao.png" alt="" class="object-contain">
+            <img src="images/sao1.png" alt="" class="object-contain">
+            <h4 class="ml-1">từ 4 sao</h4>
+          </div>
+          <div class="flex gap-[2px] mt-[14px]">
+            <img src="images/sao.png" alt="" class="object-contain">
+            <img src="images/sao.png" alt="" class="object-contain">
+            <img src="images/sao.png" alt="" class="object-contain">
+            <img src="images/sao1.png" alt="" class="object-contain">
+            <img src="images/sao1.png" alt="" class="object-contain">
+            <h4 class="ml-1">từ 3 sao</h4>
+          </div>
+        </div>
+        <hr>
+        <div>
+          <h3 class="my-[15px]">Giá</h3>
+          <button class="bg-[#EEEEEE] rounded-xl py-1 px-3">Dưới 40.000</button>
+          <button class="bg-[#EEEEEE] rounded-xl py-1 px-3 mt-[6px]">Từ 40.000 đến 120.000</button>
+          <button class="bg-[#EEEEEE] rounded-xl py-1 px-3 mt-[6px]">Từ 120.000 đến 280.000</button>
+          <button class="bg-[#EEEEEE] rounded-xl py-1 px-3 mt-[6px]">Trên 280.000</button>
+          <h5 class="my-[7px]">Chọn Khoảng Giá</h5>
+          <input type="text" name="" id="" class="border border-[#B8B8B8] rounded w-[105px] h-[30px]"> <span
+            class="w-[7px] text-[#9A9A9A]">-</span> <input type="text"
+            class="border border-[#B8B8B8] rounded w-[105px] h-[30px]">
+          <div
+            class="border border-[#0D5CB6] text-blue-600 inline-block py-[5px] px-[27px] rounded-md mt-2 mb-[10px] hover:border-orange-600  cursor-pointer  ">
+            Áp Dụng
+          </div>
+        </div>
+        <hr>
+        <div class="mt-[15px]">
+          <h3 class="mb-[14px]">Thương Hiệu</h3>
+          <div class="flex items-center gap-[9px]">
+            <input type="checkbox">CHONMUA 365
+          </div>
+          <div class="flex items-center gap-[9px] mt-2">
+            <input type="checkbox">Deli
+          </div>
+          <div class="flex items-center gap-[9px] mt-2">
+            <input type="checkbox">Stabilo
+          </div>
+          <div class="flex items-center gap-[9px] mt-2">
+            <input type="checkbox">Pentel
+          </div>
+          <div class="flex items-center gap-[9px] mt-2 ">
+            <input type="checkbox">Thiên Long
+          </div>
+          <div class="mt-[22px] mb-[10px]">
+            <p class="text-blue-500">Xem Thêm <i class="fa-solid fa-angle-down"></i></p>
+          </div>
+        </div>
+        <hr>
+        <div class="mt-[15px]">
+          <h3 class="mb-[14px]">Nhà cung cấp</h3>
+          <div class="flex items-center gap-[9px]">
+            <input type="checkbox">Nhà sách Fahasa
+          </div>
+          <div class="flex items-center gap-[9px] mt-2">
+            <input type="checkbox">Tiki Trading
+          </div>
+          <div class="flex items-center gap-[9px] mt-2">
+            <input type="checkbox">Nhà Sách Vĩnh Thụy
+          </div>
+          <div class="flex items-center gap-[9px] mt-2">
+            <input type="checkbox">Times Books
+          </div>
+          <div class="flex items-center gap-[9px] mt-2 ">
+            <input type="checkbox">Minhhabooks
+          </div>
+          <div class="mt-[22px] mb-[10px]">
+            <p class="text-blue-500">Xem Thêm <i class="fa-solid fa-angle-down"></i></p>
+          </div>
+        </div>
+        <hr>
+        <div>
+          <h3 class="my-[15px]">Giao Hàng</h3>
+          <div class="flex items-center gap-2">
+            <input type="radio" name="" id="">Hàng nội địa
+
+          </div>
+          <div class="flex items-center gap-2 mt-2">
+            <input type="radio" name="" id="">Hàng quốc tế
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end slidebar -->
+
+    <div class="grow ">
+      <h2 class="my-[16px] text-[23px] hidden md:block">Nhà Sách Tiki</h2>
+      <div class="flex mx- ">
+        <img src="images/slide.png" id="banner" alt="" class="mx-auto md:mx-0 w-4/5 
+        ">
+        <div class="ml-[120px] mt-[150px] hidden md:block">
+          <button onclick="Next()"><i class="fa-solid fa-circle-arrow-right text-4xl"></i></button>
+        </div>
+      </div>
+      <!-- content mobile -->
+      <div class="md:hidden ml-8">
+        <h3 class="text-base ml-2 my-[10px]">Nhà Sách Tiki</h3>
+        <div class="flex gap-12">
+          <div class="flex items-center">
+            <img src="images/anhmobile.png" alt="" width="50px">
+            <p class="">English Books</p>
+          </div>
+          <div class="flex items-center">
+            <img src="images/anhmobile1.ng.webp" alt="" width="50px">
+            <p>Sách Tiếng Việt</p>
+          </div>
+
+        </div>
+
+        <button onclick="show(true)" class="items-center text-blue-500 container mt-5 cursor-pointer">
+          Xem Thêm 2 Danh Mục <i class="fa-solid fa-angle-down"></i>
+        </button>
+        <div id="danhmuc" style="display: none;">
+          <div class="flex items-center">
+            <img src="images/anhmobile.png" alt="" width="50px">
+            <p class="">English Books</p>
+          </div>
+          <div class="flex items-center mt-5">
+            <img src="images/anhmobile1.ng.webp" alt="" width="50px">
+            <p>Sách Tiếng Việt</p>
+          </div>
+        </div>
+      </div>
+      <!-- end content mobile -->
+      <div class="mt-[28px] mb-[11px] flex gap-[47px] items-center ml-[30px] md:ml-0">
+        <button
+          class="md:pb-[12px] md:border-b-[4px] focus:border-b-[1px] transition-all border-[#0D5CB6] focus:text-[#0D5CB6] md:animate-bounce">Phổ
+          biến</button>
+        <button
+          class="md:pb-[12px] md:focus:border-b-[4px] focus:border-b-[1px] transition-all focus:border-[#0D5CB6] focus:text-[#0D5CB6] focus:animate-pulse">Bán
+          chạy</button>
+        <button
+          class="md:pb-[12px] md:focus:border-b-[4px] focus:border-b-[1px] transition-all focus:border-[#0D5CB6] focus:text-[#0D5CB6] focus:animate-pulse">Hàng
+          mới</button>
+        <button
+          class="hidden md:block md:pb-[12px] md:focus:border-b-[4px] focus:border-b-[1px] transition-all focus:border-[#0D5CB6] focus:text-[#0D5CB6] focus:animate-pulse">Giá
+          thấp</button>
+        <button
+          class="hidden md:block md:pb-[12px] md:focus:border-b-[4px] focus:border-b-[1px] transition-all focus:border-[#0D5CB6] focus:text-[#0D5CB6] focus:animate-pulse">Giá
+          cao</button>
+        <button class="md:hidden flex items-center gap-1">Giá <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6"
+            fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4" />
+          </svg></button>
+      </div>
+
+      <div class="flex items-center gap-[10px] my-[12px] ml-[29px] md:ml-0">
+        <div class="flex items-center gap-2 md:hidden "><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6"
+            fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" />
+          </svg>Lọc</div>
+        <div class="bg-[#EEEEEE] px-[12px] rounded-[100px] py-[1px] md:mt-[10px]">
+          <img src="images/sldiebartikinow.png" alt="">
+        </div>
+        <div class="bg-[#EEEEEE] px-[12px] py-[1px] rounded-[100px] md:mt-[10px]">
+          <img src="images/slidebarfreeship.png" alt="">
+        </div>
+        <div class="flex items-center gap-2 md:hidden">Nhà Cung Cấp <i class="fa-solid fa-angle-down"></i></div>
+
+      </div>
+      <!-- content -->
+      <div id="list-book" class="grid grid-cols-2 md:grid-cols-4 gap-3 ">
+        <div>
+          <img src="https://picsum.photos/200/300" alt="Image">
+          <img src="images/sldiebartikinow.png" alt="">
+          <p>Name</p>
+          <p>5sao</p>
+          <p>Price</p>
+        </div>
+      </div>
+      <!-- end content -->
+      <div>
+        <!-- <ul class="flex justify-end gap-[12px] items-center mt-[24px] mb-[25px]">
+          <li class="bg-[#189EFF] px-[15px] py-[10px] text-white">1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+          <i class="fa-solid fa-circle-arrow-right "></i>
+        </ul> -->
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <!-- footer top -->
+  <div class="container mx-auto md:grid md:grid-cols-5 md:gap-3 hidden md:block mt-[20px]">
+    <div class="">
+      <h3 class="font-bold text-xl">Hỗ trợ khách hàng</h3>
+      <ul>
+        <li class="mt-3"> Hotline:
+          1900-6035
+          (1000 đ/phút, 8-21h kể cả T7, CN)</li>
+        <li class="mt-2"> Các câu hỏi thường gặp</li>
+        <li class="mt-2"> Gửi yêu cầu hỗ trợ</li>
+        <li class="mt-2"> Hướng dẫn đặt hàng</li>
+        <li class="mt-2"> Phương thức vận chuyển</li>
+        <li class="mt-2"> Chính sách đổi trả</li>
+        <li class="mt-2"> Hướng dẫn trả góp</li>
+        <li class="mt-2">Chính sách hàng nhập khẩu</li>
+        <li class="mt-2"> Hỗ trợ khách hàng:
+          hotro@tiki.vn</li>
+        <li class="mt-2 mb-4"> Báo lỗi bảo mật:
+          security@tiki.vn</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-bold text-xl">Về Tiki</h3>
+      <ul>
+        <li class="mt-3"> Giới thiệu Tiki</li>
+        <li class="mt-2">Tuyển dụng</li>
+        <li class="mt-2"> Chính sách bảo mật thanh toán</li>
+        <li class="mt-2"> Chính sách bảo mật thông tin cá nhân</li>
+        <li class="mt-2"> Chính sách giải quyết khiếu nại</li>
+        <li class="mt-2"> Điều khoản sử dụng</li>
+        <li class="mt-2"> Giới thiệu Tiki Xu</li>
+        <li class="mt-2">Tiếp thị liên kết cùng Tiki</li>
+        <li class="mt-2">Bán hàng doanh nghiệp</li>
+        <li class="mt-2">Điều kiện vận chuyển</li>
+      </ul>
+
+    </div>
+    <div>
+      <h3 class="font-bold text-xl">Hợp tác và liên kết</h3>
+      <ul>
+        <li class="mt-3"> Quy chế hoạt động Sàn GDTMĐT </li>
+        <li class="mt-2 mb-6"> Bán hàng cùng Tiki</li>
+        <p class="font-bold mb-3"> Chứng nhận bởi</p>
+        <div class="flex gap-2"> <img src="images/Rectangle.png" alt="">
+          <img src="images/dangky.png" alt="">
+        </div>
+
+      </ul>
+
+
+    </div>
+    <div>
+      <h3 class="font-bold text-xl ">Phương thức thanh toán</h3>
+      <div class="flex mt-3 mb-[33px] grid grid-cols-5">
+        <img src="images/Frame.png" alt="" class="pb-[17px]">
+        <img src="images/Frame-1.png" alt="">
+        <img src="images/Frame-2.png" alt="">
+        <img src="images/Frame-3.png" alt="">
+        <img src="images/Frame-4.png" alt="">
+        <img src="images/Frame-5.png" alt="" class="pb-[17px]">
+        <img src="images/Frame-6.png" alt="">
+        <img src="images/Frame-7.png" alt="">
+        <img src="images/Frame-8.png" alt="">
+        <img src="images/Frame-9.png" alt="">
+        <img src="images/Frame-10.png" alt="">
+        <img src="images/Frame-11.png" alt="">
+      </div>
+      <h3 class="font-bold text-xl mb-[12px]">Dịch vụ giao hàng</h3>
+      <img src="images/tikinow.png" alt="">
+    </div>
+    <div>
+      <h3 class="font-bold text-xl ">Kết nối với chúng tôi</h3>
+      <div class="flex gap-[12px] mt-3 mb-8">
+        <img src="images/fb.png" alt="">
+        <img src="images/youtube.png" alt="">
+        <img src="images/zalo.png" alt="">
+      </div>
+      <h3 class="font-bold text-xl">Tải ứng dụng trên điện thoại</h3>
+      <div class="flex mt-3 gap-2">
+        <img src="images/qr.png" alt="">
+
+        <div class="">
+          <img src="images/appstore.png" alt="" class="mb-2">
+          <img src="images/chplay.png" alt="">
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  <!-- end footer top -->
+  <hr>
+  <!-- footer bottom -->
+  <div class="container mx-auto my-4 hidden md:block">
+    <p>Trụ sở chính: Tòa nhà Viettel, Số 285, đường Cách Mạng Tháng 8, phường 12, quận 10, Thành phố Hồ Chí Minh</p>
+    <p>Tiki nhận đặt hàng trực tuyến và giao hàng tận nơi, chưa hỗ trợ mua và nhận hàng trực tiếp tại văn phòng hoặc
+      trung tâm
+      xử lý đơn hàng</p>
+    <p>Giấy chứng nhận Đăng ký Kinh doanh số 0309532909 do Sở Kế hoạch và Đầu tư Thành phố Hồ Chí Minh cấp lần đầu ngày
+      06/01/2010 và sửa đổi lần thứ 23 ngày 14/02/2022</p>
+    <p>© 2022 - Bản quyền của Công ty TNHH Ti Ki</p>
+  </div>
+  <!-- end footer bottom -->
+  <script>
+    function show(visible) {
+      var danhmuc1 = document.getElementById('danhmuc');
+      danhmuc1.style.display = visible ? '' : 'none';
+    }
+    var img = document.getElementById('banner');
+    var anh = ['slide1.png', 'slide2.png', 'slide3.png', 'slide4.png'];
+    var index = 0;
+    var len = anh.length;
+    var fullimg = 'images/';
+
+    function Next() {
+      if (index == len - 1) {
+        index = 0;
+        img.src = fullimg + anh[index];
+      } else {
+        index++;
+        img.src = fullimg + anh[index];
+      }
+    }
+    var t = null;
+    var flag = 0;
+    function Start() {
+      if (flag == 0) {
+        t = setInterval(function () {
+          Next();
+        }, 2500);
+        flag = 1;
+      }
+    }
+    Start();
+  </script>
+  <script type="module" src="./app.js"></script>
+</body>
+
+</html>
